@@ -1,4 +1,3 @@
-import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import DashboardLayout from "./pages/dashboard/DashboardLayout";
@@ -10,6 +9,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import HomePage from "./components/HomePage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -20,6 +20,12 @@ const App = () => {
           <LoginPage />
         </PublicRoute>
       ),
+    },
+    {
+      path:"/",
+      element:(
+        <HomePage/>
+      )
     },
     {
       path: "/dashboard",
