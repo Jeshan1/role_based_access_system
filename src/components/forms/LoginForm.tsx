@@ -68,7 +68,7 @@ const LoginForm = ({ loginDetails, setLoginDetails }: LoginFormProps) => {
   };
 
   return (
-    <div className="border-2 border-gray-200 rounded-md max-w-lg mx-auto w-full p-2">
+    <div className="border-2 border-gray-200 rounded-md max-w-lg mx-auto w-full px-5 py-5">
       <h1 className="text-center text-3xl font-semibold">Login Form</h1>
       <form onSubmit={loginFormSubmitHandler}>
         {loginFormData.map((item) => (
@@ -89,7 +89,7 @@ const LoginForm = ({ loginDetails, setLoginDetails }: LoginFormProps) => {
             )}
           </div>
         ))}
-        <Button>Login</Button>
+        <Button className="mb-5">Login</Button>
       </form>
     </div>
   );
