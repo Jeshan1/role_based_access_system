@@ -42,7 +42,7 @@ git clone https://github.com/your-username/role-based-access-system.git
 
 #### 2. Set Up the Backend
 1. Navigate to the backend directory:
-cd role-based-access-system/backend
+https://github.com/Jeshan1/role_based_access_backend.git and clone this to setup backend
 2. Install the dependencies:
 npm install
 3. Create a .env file in the backend folder and add your MongoDB connection URI:
