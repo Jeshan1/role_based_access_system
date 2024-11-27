@@ -10,7 +10,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtomPrps>(
     return (
       <button
         className={twMerge(
-          "text-xl mt-2 w-full bg-red-500 text-white py-2 border-2 rounded-md cursor-pointer",
+          "text-xl mt-2 w-full bg-red-500 text-white p-2 border-2 rounded-md cursor-pointer",
           className
         )}
         {...props}
